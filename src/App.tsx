@@ -5,15 +5,19 @@ import MainContent from "./MainContent";
 import "./styles.css";
 
 function App(): JSX.Element {
+  const [search, setSearch] = useState("");
 
-  const [searchTerm, setSearchTerm] = useState("")
+  function handleSearch(event: React.ChangeEvent<HTMLInputElement>) {
+    setSearch(event.target.value);
+    console.log(search);
+  }
 
   return (
-  <>
-  <Header/>
-  <MainContent />
-  </>
-  )
+    <>
+      <Header searchTerm={search} handleChange={handleSearch} />
+      <MainContent searchTerm={search} />
+    </>
+  );
 }
 
 export default App;

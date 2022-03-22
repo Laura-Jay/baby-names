@@ -1,23 +1,27 @@
-import { useState } from "react"
 
-export default function Header(): JSX.Element {
+interface HeaderProps {
+  searchTerm: string;
+  handleChange: React.ChangeEventHandler<HTMLInputElement>;
+}
 
-// function handleChange(event: React.ChangeEvent<HTMLInputElement>){
-//  setSearchTerm(event.target.value)
-// }
-
-return (
+export default function Header(props: HeaderProps): JSX.Element {
+  return (
     <>
-    <nav className="navbar">
+      <nav className="navbar">
         <h2 className="navbar--title">Baby Names</h2>
-        <p> <strong>Search:</strong>
+        <p>
+          {" "}
+          <strong>Search:</strong>
         </p>
-        <input 
-        type="text"
-        placeholder="Name"
-        className="navbar--search"
+        <input
+          type="text"
+          placeholder="Name"
+          name="searchTerm"
+          value={props.searchTerm}
+          onChange={props.handleChange}
+          className="navbar--search"
         />
-    </nav>
+      </nav>
     </>
-)
+  );
 }

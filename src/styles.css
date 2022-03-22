@@ -21,11 +21,11 @@ body {
   height: 50px;
   padding: 5px;
   padding-right: 25px;
-  background-color: #CBC0D3;
+  background-color: #cbc0d3;
 }
 
 .navbar--title {
-  margin-left:25px;
+  margin-left: 25px;
   margin-right: auto;
   color: white;
 }
@@ -40,7 +40,6 @@ body {
   padding: 3px;
   margin: 3px;
 }
-
 
 .babyNamesList {
   display: flex;
