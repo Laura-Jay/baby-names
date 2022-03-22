@@ -1,0 +1,54 @@
+/* 
+Colour Scheme
+#DEE2FF - baby blue
+#FEEAFA - pastel yellow
+#EFD3D7 - baby pink
+#CBC0D3 - pastel purple
+#8E9AAF - dark purple
+*/
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #8e9aaf;
+  margin: 0px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 5px;
+  padding-right: 25px;
+  background-color: #CBC0D3;
+}
+
+.navbar--title {
+  margin-left:25px;
+  margin-right: auto;
+  color: white;
+}
+
+.navbar--search {
+  border-radius: 5px;
+  margin-left: 8px;
+}
+
+.name-tile {
+  border-radius: 5px;
+  padding: 3px;
+  margin: 3px;
+}
+
+
+.babyNamesList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 15px;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: white;
+  margin: 20px;
+}
