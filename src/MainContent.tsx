@@ -28,12 +28,12 @@ function MainContent(props: MainContentProps): JSX.Element {
     ...obj,
     isFavourite: false,
   }));
-  const favouriteTiles = filteredBabyNames.map((obj) => ({
+  const favouriteTiles = sortedBabyNames.map((obj) => ({
     ...obj,
     isFavourite: false,
   }));
 
-  const [tiles, setTiles] = React.useState(nameTiles);
+  const [tiles, setTiles] = React.useState(nameTiles.filter(searchNames));
 
   const [favourites, setFavourites] = React.useState(favouriteTiles);
 
