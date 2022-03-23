@@ -1,4 +1,3 @@
-
 interface HeaderProps {
   searchTerm: string;
   handleChange: React.ChangeEventHandler<HTMLInputElement>;

@@ -9,7 +9,6 @@ function App(): JSX.Element {
 
   function handleSearch(event: React.ChangeEvent<HTMLInputElement>) {
     setSearch(event.target.value);
-    console.log(search);
   }
 
   return (
