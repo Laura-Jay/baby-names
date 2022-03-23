@@ -33,6 +33,7 @@ function MainContent(props: MainContentProps): JSX.Element {
   return (
     <>
       <div className="App">
+        {props.searchTerm && <h4>You are searching for {props.searchTerm} </h4>}
         <div className="babyNamesList">{babyNamesTiles}</div>
       </div>
     </>
