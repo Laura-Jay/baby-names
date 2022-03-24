@@ -20,7 +20,7 @@ export default function Header(props: HeaderProps): JSX.Element {
           onChange={props.handleChange}
           className="navbar--search"
         />
-        <p>You are searching for {props.searchTerm}</p> 
+        <p>You are searching for {props.searchTerm}</p>
       </nav>
     </>
   );

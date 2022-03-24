@@ -38,7 +38,6 @@ function MainContent(props: MainContentProps): JSX.Element {
   const [favourites, setFavourites] = React.useState(favouriteTiles);
 
   function handleFavourite(id: number) {
-    
     setFavourites((prevValue) => {
       return prevValue.map((element) => {
         return element.id === id
