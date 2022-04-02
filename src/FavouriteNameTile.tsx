@@ -8,14 +8,14 @@ interface BabyTiles {
   handleClick: React.MouseEventHandler<HTMLDivElement>;
 }
 
-export default function NameTile(props: BabyTiles): JSX.Element {
+export default function FavouriteNameTile(props: BabyTiles): JSX.Element {
   const styles = {
     backgroundColor: props.sex === "f" ? "#EFD3D7" : "#DEE2FF",
   };
 
   return (
     <>
-      {!props.favourite && (
+      {props.favourite && (
         <div style={styles} className="name-tile" onClick={props.handleClick}>
           {props.name}
         </div>
